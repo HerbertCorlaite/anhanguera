@@ -19,21 +19,44 @@
         <section class="quadro">
             <h2>Integrantes do Grupo</h2>
             <ul id="lista-amigos">
-                <li class="lider">Herbert Corlaite <span class="badge">Líder</span></li>
-                <li>Gabriel Lacerda</li>
-                <li>Gabriel Ladeira</li>
-                <li>Daniel Lima</li>
-                <li>Maria Eduarda</li>
-                <li>Jonas Canuto</li>
-                <li>Maria Santos</li>
-                <li>Victor Cliver</li>
-                <li>Rafael Oliveira</li>
-                <li>Thaylan Santos</li>
-            </ul>
-            <form id="form-amigo">
-                <input type="text" id="novo-amigo" placeholder="Adicionar novo amigo" required>
-                <button type="submit">Adicionar</button>
-            </form>
+    <li class="lider">Herbert Corlaite <span class="badge">Líder</span></li>
+    <li>Gabriel Lacerda</li>
+    <li>Gabriel Ladeira</li>
+    <li>Daniel Lima</li>
+    <li>Maria Eduarda</li>
+    <li>Jonas Canuto</li>
+    <li>Maria Santos</li>
+    <li>Victor Cliver</li>
+    <li>Rafael Oliveira</li>
+    <li>Thaylan Santos</li>
+</ul>
+<!-- Remover o formulário antigo -->
+<!-- <form id="form-amigo">
+    <input type="text" id="novo-amigo" placeholder="Adicionar novo amigo" required>
+    <button type="submit">Adicionar</button>
+</form> -->
+<button id="btn-solicitar-inclusao">Solicitar inclusão</button>
+
+<!-- Modal para solicitação de inclusão -->
+<div id="modal-inclusao" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h3>Solicitar inclusão no grupo</h3>
+        <form id="form-solicitacao">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            <label for="email">Email do GitHub:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="hidden" id="destino" value="placeholder@email.com">
+            <button type="submit">Enviar solicitação</button>
+        </form>
+        <div id="mensagem-sucesso" style="display:none; color:green; margin-top:1em;">
+            Solicitação enviada com sucesso!
+        </div>
+    </div>
+</div>
         </section>
     </main>
     <footer>

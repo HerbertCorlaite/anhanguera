@@ -112,3 +112,78 @@ footer {
     font-size: 0.95rem;
     border-top: 1px solid #e0eafc;
 }
+
+#btn-solicitar-inclusao {
+    background: #005baa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+#btn-solicitar-inclusao:hover {
+    background: #003f7d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background: #fff;
+    margin: 8% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px; right: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #005baa;
+}
+#form-solicitacao label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: 500;
+}
+#form-solicitacao input[type="text"],
+#form-solicitacao input[type="email"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #b3c6e0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+#form-solicitacao button {
+    margin-top: 1.2em;
+    width: 100%;
+    background: #005baa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#form-solicitacao button:hover {
+    background: #003f7d;
+}
